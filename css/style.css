@@ -1,0 +1,30 @@
+body{
+    background-color: #04242C;
+}
+
+.container-big{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 99vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 31.25rem;
+    margin: auto;
+    text-align: center;
+    background-color: #FCAC3C;
+}
+
+.user-price{
+    color: green;
+}
+
+.user-price:hover{
+    transform: scale(1.1);
+}
