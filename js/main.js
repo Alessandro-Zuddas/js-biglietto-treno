@@ -12,10 +12,13 @@ let fullPrice = tripDuration * 0.21;
 
 if(userAge < 18){
     fullPrice -= fullPrice * 20 / 100;
+    document.querySelector("h1").innerHTML = `Il tuo prezzo con la tariffa minorenni è:`;
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
 }else if (userAge >= 65){
     fullPrice -= fullPrice * 40 / 100;
+    document.querySelector("h1").innerHTML = `Il tuo prezzo con la tariffa over 65 è:`;
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
 } else {
+    document.querySelector("h1").innerHTML = `Il tuo prezzo con la tariffa standard è:`;
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
 }
