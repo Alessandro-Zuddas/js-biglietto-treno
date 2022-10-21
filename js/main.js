@@ -11,10 +11,10 @@ const userAge = Number(prompt("Adesso inserisci la tua età!"));
 let fullPrice = tripDuration * 0.21;
 
 if(userAge < 18){
-    fullPrice -= (fullPrice * 20 / 100);
+    fullPrice -= fullPrice * 20 / 100;
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
 }else if (userAge >= 65){
-    fullPrice -= (fullPrice * 40 / 100);
+    fullPrice -= fullPrice * 40 / 100;
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
 } else {
     document.querySelector("h2").innerHTML = `${fullPrice.toFixed(2)} €`;
